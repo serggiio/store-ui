@@ -1,0 +1,14 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/product-lib",
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  },
+  "allowedNonPeerDependencies": [
+    "product-lib",
+    "@ngrx/store",
+    "@ngrx/effects",
+    "@ngrx/entity",
+    "@ngrx/store-devtools"
+  ]
+}

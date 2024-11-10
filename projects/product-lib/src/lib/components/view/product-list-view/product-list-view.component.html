@@ -1,0 +1,27 @@
+<article>
+  <section>
+    <div class="container">
+      <div class="row w-100">
+        <div
+          class="col-12 col-md-4 mb-4"
+          *ngFor="let product of products; trackBy: trackIndex"
+        >
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="{{ product.image }}"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ product.title }}</h5>
+              <p class="card-text">
+                {{ product.description }}
+              </p>
+              <a [routerLink]="[product.id]" class="btn btn-primary">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>

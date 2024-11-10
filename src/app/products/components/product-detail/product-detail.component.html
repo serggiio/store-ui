@@ -1,0 +1,18 @@
+<article>
+  <section>
+    <lib-product-detail-core #productCore>
+      <article>
+        <section>
+          <lib-product-detail-view
+            [product]="productCore.product$ | async"
+          ></lib-product-detail-view>
+        </section>
+        <section class="pt-5">
+          <lib-product-description-view
+            [product]="productCore.product$ | async"
+          ></lib-product-description-view>
+        </section>
+      </article>
+    </lib-product-detail-core>
+  </section>
+</article>

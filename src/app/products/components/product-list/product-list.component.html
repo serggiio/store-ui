@@ -1,0 +1,9 @@
+<article>
+  <section>
+    <lib-product-list-core #productsCore>
+      <lib-product-list-view
+        [products]="(productsCore.products$ | async) ?? []"
+      ></lib-product-list-view>
+    </lib-product-list-core>
+  </section>
+</article>

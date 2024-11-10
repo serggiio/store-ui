@@ -1,0 +1,25 @@
+{
+  "name": "product-lib",
+  "version": "0.0.1-local",
+  "scripts": {
+    "build": "ng build product-lib",
+    "pack": "cd ../../dist/product-lib && npm pack",
+    "package": "npm run build && npm run pack"
+  },
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0",
+    "@ngrx/effects": "^15.4.0",
+    "@ngrx/entity": "^15.4.0",
+    "@ngrx/store": "^15.4.0",
+    "@ngrx/store-devtools": "^15.4.0"
+  },
+  "dependencies": {
+    "product-lib": "file:",
+    "tslib": "^2.3.0"
+  },
+  "whitelistedNonPeerDependencies": [
+    "."
+  ],
+  "sideEffects": false
+}
